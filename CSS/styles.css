@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap");
+
+h1 {
+  border-top: 5px solid cyan;
+  border-bottom: 5px solid cyan;
+  padding: 20px;
+  text-align: center;
+  margin: 5% 20%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  list-style-type: none;
+}
+li {
+  display: inline;
+  margin: 10px;
+}
+
+ol {
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 25px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(20, 255, 243);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(167, 22, 142);
+}
+a:hover {
+  color: rgb(255, 173, 217);
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(4, 175, 175);
+}
+
+.aboutme {
+  background-color: rgba(255, 209, 245, 0.678);
+  color: rgb(0, 255, 200);
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  border-radius: 10px 60px;
+  margin-bottom: 20px;
+  background-color: rgb(164, 233, 233);
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  font-size: 20px;
+}
+
+/* ****************** Tablet screen****************** */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .info {
+    text-align: center;
+    border-radius: 10px 60px;
+    margin-bottom: 20px;
+    background-color: rgb(164, 233, 233);
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    font-size: 15px;
+  }
+}
+
+/* ****************** Mobile screen****************** */
+@media (max-width: 480px) {
+  h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .info {
+    text-align: center;
+    border-radius: 10px 60px;
+    margin-bottom: 20px;
+    background-color: rgb(164, 233, 233);
+    padding: 20px;
+    height: 275px;
+    width: 275px;
+    font-size: 12px;
+  }
+}
